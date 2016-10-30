@@ -1,0 +1,55 @@
+@charset "utf-8";
+/*这里是存放点击变化的地方  开始*/
+.watch{
+    position: relative;
+    width: 674.5px;
+    /*overflow: hidden;*/
+    height: 1px;
+    float: left;
+}
+.product .product_watch{
+    position: absolute;
+    /*overflow: hidden;*/
+    height: 1px;
+    top: 0;
+    left: 0;
+}
+.product .product_watchs{
+    height: 1px;
+    float: left;
+    /*position: relative;;*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*overflow: hidden;*/
+}
+.product .product_watchs .watch_sliver,
+.product .product_watchs .watch_gold,
+.product .product_watchs .watch_spacegray,
+.product .product_watchs .watch_rosegold{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    /*overflow: hidden;*/
+}
+.product .product_watchs .watch_sliver img,
+.product .product_watchs .watch_gold img,
+.product .product_watchs .watch_spacegray img,
+.product .product_watchs .watch_rosegold img{
+    padding-left: 100px;
+}
+
+/*这里是存放点击变化的地方  结束*/
+.product_section .product_content .silver,
+.product_section .product_content .gold,
+.product_section .product_content .spacegray,
+.product_section .product_content .rosegold{
+    tab-index: -1;
+    cursor:pointer;
+}
+.macbook .product .product_section .product_look .GB256 .content,
+.macbook .product .product_section .product_look .GB512 .content{
+    width: 168px;
+    height: 296px;
+}

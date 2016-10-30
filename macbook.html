@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购买Mac</title>
+    <link rel="stylesheet" href="./js/css/bootstrap.min.css">
+    <script src="./js/jquery-3.1.0.js"></script>
+    <script src="./js/js/bootstrap.min.js"></script>
+    <script src="js/macbook.js"></script>
+    <link rel="stylesheet" href="./css/base.css"/>
+    <link rel="stylesheet" href="./css/macbook.css"/>
+    <link rel="stylesheet" href="./css/choose.css"/>
+</head>
+<body>
+<!--头部-->
+<div class="header">
+    <ul class="hid" id="hid1">
+        <li class="ac-gn-item">
+            <a href="#"><span class="glyphicon glyphicon-home"></span></a>
+        </li>
+        <li class="ac-gn-item">
+            <a href="macbook.html"><span>Mac</span></a>
+        </li>
+        <li class="ac-gn-item">
+            <a href="#"><span>iPad</span></a>
+        </li>
+        <li class="ac-gn-item">
+            <a href="#"><span>iPhone</span></a>
+        </li>
+        <li class="ac-gn-item">
+            <a href="#"><span>Watch</span></a>
+        </li>
+        <li class="ac-gn-item">
+            <a href="#"><span>TV</span></a>
+        </li>
+        <li class="ac-gn-item">
+            <a href="#"><span>Music</span></a>
+        </li>
+        <li class="ac-gn-item">
+            <a href="support.html"><span>Support</span></a>
+        </li>
+        <li class="ac-gn-item">
+            <a href="#"><span class="glyphicon glyphicon-search" id="search"></span></a>
+        </li>
+        <li class="ac-gn-item">
+            <a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a>
+        </li>
+    </ul>
+    <div class="cl"></div>
+</div>
+<!--Mac内容-->
+<div class="macbook">
+    <!--购买mac的部分开始 -->
+    <div class="product">
+        <div class="watch">
+            <!-- 进入页面Mac动画 -->
+            <div class="product_watch" id="product_watch">
+                <div class="product_scene0 div" >
+                    <img src="image/macbook-scene0-left.png" alt="" class="img1"/>
+                    <img src="image/macbook-scene0-right.png" alt="" class="img2"/>
+                </div>
+                <div class="product_scene1 div" style="display: none">
+                    <img src="image/macbook-scene1-bottom-shadow.png" alt="" class="img1"/>
+                    <img src="image/macbook-scene1-bottom.png" alt="" class="img2"/>
+                    <img src="image/macbook-scene1-rose.png" alt="" class="img3"/>
+                    <img src="image/macbook-scene1-middle-shadow.png" alt="" class="img4"/>
+                    <img src="image/macbook-scene1-middle.png" alt="" class="img5"/>
+                    <img src="image/macbook-scene1-top.png" alt="" class="img6"/>
+                </div>
+                <div class="product_scene2 div" style="display: none">
+                    <img src="image/macbook-scene2-left.png" alt="" class="img1"/>
+                    <img src="image/macbook-scene2-middle.png" alt="" class="img2"/>
+                    <img src="image/macbook-scene2-right.png" alt="" class="img3"/>
+                    <img src="image/macbook-scene2-rose.png" alt="" class="img4"/>
+                </div>
+                <div class="cl"></div>
+            </div>
+            <!-- 用户选择Mac颜色展示 -->
+            <div class="product_watchs">
+                <div class="watch_sliver" id="watch_sliver">
+                    <img src="image/macbook-select-silver-201604_GEO_CN.png" alt=""/>
+                </div>
+                <div class="watch_gold" id="watch_gold">
+                    <img src="image/macbook-select-gold-201604_GEO_CN.png" alt=""/>
+                </div>
+                <div class="watch_spacegray" id="watch_spacegray">
+                    <img src="image/macbook-select-spacegray-201604_GEO_CN.png" alt=""/>
+                </div>
+                <div class="watch_rosegold" id="watch_rosegold">
+                    <img src="image/macbook-select-rosegold-201604_GEO_CN.png" alt=""/>
+                </div>
+            </div>
+        </div>
+        <div class="product_section">
+            <div class="product_header">
+                <h2 class="">购买 MacBook</h2>
+                <span class="">立即订购并获得免费送货服务</span>
+            </div>
+            <div class="product_content">
+                <a href="#" class="look"><span></span>查看图库并观看360度视图</a>
+                <!-- 模态图开始 用户点击可以看到轮播图和video-->
+                <div id="mask" style="user-select: none">
+                    <button class="close_all" id=""> &times; </button>
+                    <div id="show">
+                        <div class="box">
+                            <ul class="img">
+                                <li><img src="image/macbook-2016-gallery1.jpg" alt=""/></li>
+                                <li><img src="image/macbook-2016-gallery2_GEO_CN.jpg" alt=""/></li>
+                                <li><img src="image/macbook-2016-gallery3.jpg" alt=""/></li>
+                                <li><img src="image/macbook-2016-gallery4_GEO_CN.jpg" alt=""/></li>
+                                <li><img src="image/macbook-2016-gallery5.jpg" alt=""/></li>
+                                <li><img src="image/macbook-2016-gallery6_GEO_CN.jpg" alt=""/></li>
+                            </ul>
+                            <ul class="circle">
+                                <li class="current"><a href="javascript:;">1</a></li>
+                                <li><a href="javascript:;">2</a></li>
+                                <li><a href="javascript:;">3</a></li>
+                                <li><a href="javascript:;">4</a></li>
+                                <li><a href="javascript:;">5</a></li>
+                                <li><a href="javascript:;">6</a></li>
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <div class="left"><</div>
+                            <div class="right">></div>
+                        </div>
+                    </div>
+                    <div class="cl"></div>
+                    <!-- 视频播放 -->
+                    <div class="video_box" id="video_box">
+                        <button class="close_all" id="close_all">  </button>
+
+                        <div id="video"> 
+                            <video src="image/macbook-2015-web-360_SC_2X.mp4" autoplay="autoplay"></video>
+                        </div>
+                        <img src="image/replay-no-circle-2015.png" alt="" id="start_video" />
+                    </div> 
+                </div>
+                <!-- 模态图结束-->
+                <h5 class="" id="facade">外观</h5>
+                <!-- 选择Mac颜色 -->
+                <div class="silver" id="silver">
+                    <img src="image/swatch-silver-201604.png" alt=""/>
+                    <p>银色</p>
+                </div>
+                <div class="gold" id="gold">
+                    <img src="image/swatch-gold-201604.png" alt=""/>
+                    <p>金色</p>
+                </div>
+                <div class="spacegray" id="spacegray">
+                    <img src="image/swatch-spacegray-201604.png" alt=""/>
+                    <p>深空灰色</p>
+                </div>
+                <div class="rosegold" id="rosegold">
+                    <img src="image/swatch-rosegold-201604.png" alt=""/>
+                    <p>玫瑰金色</p>
+                </div>
+            </div>
+            <!-- 两中配置的Mac的介绍-->
+            <div class="product_look">
+                <h5 class="h5">机型</h5>
+                <p class=""><a href="#" class="a" id="hyperlink">哪种机型适合你？</a></p>
+                <div class="GB256">
+                    <div class="content">
+                        <ul>
+                            <li class="color3">基于 PCIe 的 256GB 主板集成闪存<sup></sup></li>
+                            <li class="color3">
+                                1.1GBz 双核
+                                <br/>
+                                Inter Core m3 处理器
+                                <br/>
+                                Turbo Boost 最高可达
+                                <br/>
+                                2.2GHz
+                            </li>
+                            <li class="color3">8GB内存</li>
+                            <li class="color3">Inter HD Graphics 515</li>
+                            <li class="color3" id="price1">
+                                <span>RMB 9,288</span>
+                                <br/>
+                                <a href="#">分期每月最低约RMB 774。</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="GB512">
+                    <div class="content">
+                        <ul>
+                            <li class="color3">基于 PCIe 的 512GB 主板集成闪存<sup></sup></li>
+                            <li class="color3">
+                                1.2GBz 双核
+                                <br/>
+                                Inter Core m5 处理器
+                                <br/>
+                                Turbo Boost 最高可达
+                                <br/>
+                                2.7GHz
+                            </li>
+                            <li class="color3">8GB内存</li>
+                            <li class="color3">Inter HD Graphics 515</li>
+                            <li class="color3" id="price2">
+                                <span>RMB 11,288</span>
+                                <br/>
+                                <a href="#">分期每月最低约RMB 941。</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="close1 color3">含增值税及其他法定税费：约RMB 1,360.*</div>
+                <div class="close2 color3">含增值税及其他法定税费：约RMB 1,651.*</div>
+            </div>
+            <div class="cl"></div>
+        </div>
+    </div>
+    <!--购买mac的部分结束 -->
+    <!-- 了解mac的部分开始-->
+    <div class="product_know">
+        <div class="content_auto">
+            <div class="product_info">
+                <h2 class="">深入了解MacBook</h2>
+                <a href="#">访问全新MacBook网页></a>
+            </div>
+            <div class="hr"></div>
+            <div class="product_compare">
+                <img src="image/mac-compare-bbh-201501_GEO_CN.png" alt=""/>
+                <h2 class="">Mac笔记本电脑机型比较</h2>
+                <a href="#">找到适合你的Mac></a>
+            </div>
+        </div>
+    </div>
+    <!-- 了解mac的部分结束-->
+    <!-- 包装内容部分开始-->
+    <div class="product_wite">
+        <h2 class="">包装内容</h2>
+    </div>
+    <!-- Mac整机展示和配件-->
+    <div class="row">
+        <div class="row_left">
+            <img  class="goldImg" id="goldImg" src="image/macbook-box-hw-gold-201504.jpg" alt="" style="display: none"/>
+            <img class="rosegoldImg" id="rosegoldImg" src="image/macbook-box-hw-rosegold-201603.jpg" alt="" style="display: none"/>
+            <img class="silverImg" id="silverImg" src="image/macbook-box-hw-silver-201504.jpg" alt=""/>
+            <img  class="spacegrayImg" id="spacegrayImg" src="image/macbook-box-hw-spacegray-201504.jpg" alt="" style="display: none"/>
+            <p class="">MacBook</p>
+         </div>
+         <div class="row_right">
+             <div class="top">
+                 <img src="image/macbook-box-adapter-201504.png" alt=""/>
+                 <p>29W USB—C 电源适配器</p>
+             </div>
+             <div class="bottom">
+                 <img src="image/macbook-box-cable-201504.png" alt=""/>
+                 <p>USB-C 充电线缆（2米）</p>
+             </div>
+         </div>
+    </div>
+    <!-- 包装内容部分结束-->
+    <!-- 服务部分开始-->
+    <div class="serve">
+        <div class="content_auto">
+            <img src="image/applecare-hero-bb-201505.jpg" alt=""/>
+            <h2 class="">适用于Mac的AppleCare Protection Plan 全方位服务计划</h2>
+            <p class="">
+                适用于 Mac 的 AppleCare Protection Plan 全方位服务计划可提供最长可达三年的专家电话技术支持，以及来自 Apple 的额外硬件服务选项。
+                <br/><br/>
+                当你购买了 AppleCare Protection Plan 全方位服务计划，即可直接使用备受赞誉的 Apple 一站式电话技术支持，咨询有关 Mac、macOS 以及照片、iMovie、GarageBand、Pages、Numbers、Keynote 等 Apple 品牌应用软件的问题。你甚至还可以在访问世界其他国家或地区时，在当地享受维修服务。
+                <br/><br/>
+                中国的消费者权益保护法包括“三包”规定，赋予了消费者自购机之日起 2 年的主要部件质量问题保修服务。在浙江省，消费者权益保护法赋予了消费者自购买之日起 3 年的台式电脑质量问题保修服务。在此基础上，大多数 Apple 产品也附带 90 天的免费电话技术支持，以及来自 Apple 的 1 年有限保修服务。欲知详情，请点击
+                <a href="#">这里</a>。
+                <br/><br/><br/>
+                <a href="#">进一步了解AppleCare Protection Plan 全方位服务计划></a>
+                </p>
+        </div>
+    </div>
+    <!-- 服务部分结束-->
+    <!-- 享受以及收回开始-->
+</div>
+<div class="enjoy">
+    <div class="enjoy_mac">
+        <div class="content_auto">
+            <div class="h">
+                <h2 class="">购买全新Mac，享受教育优惠。</h2>
+                <a href="#" class="">进一步了解教育优惠></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="back_mac">
+    <div class="content_auto">
+        <div class="img">
+            <img src="image/mac-recycle-bb-201501.jpg" alt=""/>
+        </div>
+        <div class="back">
+            <h2 class="">回收你的旧Mac</h2>
+            <a href="#" class="">进一步了解Apple回收计划></a>
+        </div>
+    </div>
+</div>
+<!-- 享受以及收回结束-->
+<!-- 购买 固定栏-->
+<div class="buy" id="buy_mac">
+    <div class="content_auto">
+        <div class="buy_help">
+            <p class="">获得购买帮助,</p>
+            <a href="#">在线交流</a>
+        </div>
+        <div class="buy_deliver" id="buy_deliver">
+            <ul>
+                <li>送达日期<br/>有现货<br/>免费送货<br/>
+                    <a href="#">查看送货日期</a>
+                </li>
+            </ul>
+        </div>
+        <div class="buy_rmb">
+            <div class="rmb9288" id="rmb9288">
+                <span>RMB 9,288 起售</span>
+            </div>
+            <div class="rmb11288" id="rmb11288" style="display: none;">
+                <span>RMB 11,288 起售</span>
+            </div>
+            <div class="btn">
+                <button class="">选择</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--点击进入轮播图和video的导航-->
+<div id="img_wrapper" class="img_wrapper">
+    <ul>
+        <li class="first"><a href="javascript:;" id="img_wrp">
+            <img src="image/overlay-gallery-unselected.png" alt=""/>
+            <br/>
+            <span>图库</span>
+        </a></li>
+        <li class="second"><a href="javascript:;" id="img_video">
+            <img src="image/overlay-360-unselected.png" alt=""/>
+            <br/>
+            <span>360度视图</span>
+        </a></li>
+    </ul>
+</div>
+</body>
+</html>

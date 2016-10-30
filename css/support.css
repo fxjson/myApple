@@ -1,0 +1,724 @@
+@charset "utf-8";
+/*头部导航栏*/
+.header{
+    background-color: #000000;
+    height: 45px;
+    text-decoration: none;
+    margin-top: 2px;
+    padding-left: 11%;
+    padding-right: 10%;
+}
+.header ul li{
+    width: 10%;
+    height: 45px;
+    float: left;
+}
+.header ul li a{
+    display: block;
+    text-align: center;
+    color: #ffffff;
+    line-height: 45px;
+    font-size: 16px;
+    font-family: 'microsoft yahei';
+    text-decoration: none;
+}
+.header ul li a:hover{
+    color: #6e6a66;
+}
+
+/*main 样式设置开始*/
+.main{
+    margin: 0;
+    padding: 0;
+}
+.banner_top{
+    height: 680px;
+    background: url("../image/homepage-hero.image.large_2x.jpg") no-repeat center center;
+    background-size: cover;
+}
+.banner_top .support_nav{
+    width: 100%;
+    height: 52px;
+    padding-left: 13%;
+    padding-right: 13%;
+}
+.banner_top .nav{
+    border-bottom: 1px solid #bababd;
+    letter-spacing: 1px;
+}
+.banner_top .nav span{
+    display: block;
+    float: left;
+    font: 500 22px/52px "microsoft yahei";
+    color: #333333;
+}
+.banner_top .nav .menu-item{
+    float: right;
+}
+.banner_top .nav .menu-item ul li{
+    float: left;
+}
+.banner_top .nav .menu-item ul li.community{
+    margin-right: 25px;
+}
+.banner_top .nav .menu-item ul li a{
+    font: 500 10px/52px "microsoft yahei";
+    color: #333333;
+}
+.banner_top .nav .menu-item ul li a:hover{
+    color: blue;
+    text-decoration: none;
+}
+
+.banner_top .banner_content{
+    height: 263px;
+    padding-top: 68px;
+    text-align: center;
+}
+
+.banner_top .banner_content .pageTitle{
+
+}
+.banner_top .banner_content .pageTitle h1{
+    font: 200 60px/68px 'Helvetica';
+    color: #333333;
+    letter-spacing: 1px;
+}
+.banner_top .banner_content .pageTitle p{
+    font: 200 18px/18px 'microsoft yahei';
+    color: #333333;
+    margin-top: 25px;
+    letter-spacing: 1px;
+}
+.banner_top .banner_content .search_content{
+    width: 700px;
+    margin: 0 auto;
+    margin-top: 41px;
+    position: relative;
+}
+.banner_top .banner_content .search_content input{
+    width: 700px;
+    height: 52px;
+    padding-left: 50px;
+    font: 200 18px/52px "microsoft yahei";
+    /*color: #a9a9a9;*/
+    border-radius: 5px 5px 0 0;
+    background: white url("../image/search_icon_black.svg") no-repeat 13px 16px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.banner_top .banner_content .search_content span{
+    font: 200 18px/52px "microsoft yahei";
+    color: #a9a9a9;
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    display: none;
+}
+/*搜索提示信息, 这部分用户不点击搜索是隐藏的*/
+.banner_top .banner_content .search_content .search_remind{
+    width: 700px;
+    margin: 0 auto;
+    padding-top: 34px;
+    padding-bottom: 40px;
+    text-align: left;
+    background-color: white;
+    border-top: 1px solid #dedede;
+    position: absolute;
+    left: 0;
+    top: 52px;
+    display: none;
+    z-index: 1;
+}
+.banner_top .banner_content .search_content .search_remind p{
+    font: normal 10px/10px 'microsoft yahei';
+    margin-left: 32px;
+    padding-bottom: 28px;
+    letter-spacing: 1px;
+}
+.banner_top .banner_content .search_content .search_remind ul li{
+    height: 30px;
+    margin-left: 62px;
+}
+.banner_top .banner_content .search_content .search_remind ul li a{
+    font: 500 13px/30px 'microsoft yahei';
+    letter-spacing: 1px;
+}
+.banner_top .banner_content .search_content .search_remind ul li a:hover{
+    color: #333;
+}
+.banner_top .banner_content .search_content .search_show{
+    width: 700px;
+    margin: 0 auto;
+    padding: 34px 0 40px 32px;
+    text-align: left;
+    background-color: white;
+    border-top: 1px solid #dedede;
+    position: absolute;
+    left: 0;
+    top: 52px;
+    display: none;
+    z-index: 1;
+}
+.banner_top .banner_content .search_content .search_show p{
+    font:400 16px/16px 'microsoft yahei';
+}
+/*选择产品样式设置开始*/
+.sectionTitle{
+    text-align: center;
+}
+.sectionTitle h2{
+    margin-top: 48px;
+    font: 400 18px/40px 'microsoft yahei';
+    letter-spacing: 1px;
+}
+.imagegrid{
+    width: 1024px;
+    margin: 0 auto;
+    padding-top: 40px;
+    text-align: center;
+}
+.imagegrid .imagegrid_item{
+    float: left;
+    width: 170px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-bottom: 48px;
+}
+.imagegrid .imagegrid_item a:hover{
+    color: #333333;
+    text-decoration: underline;
+}
+.imagegrid .imagegrid_item a .img_show{
+    padding-bottom: 16px;
+}
+.imagegrid .imagegrid_item a .img_show img{
+    height: 123px;
+}
+.imagegrid .imagegrid_item a span{
+    font: 200 16px/19px 'microsoft yahei';
+    color: #333333;
+}
+/*展开产品列表样式设置开始*/
+.product_show{
+    /*height: 415px;*/
+    padding: 20px 0;
+    border-top: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+}
+.product_show .show_toggle{
+    height: 31px;
+    text-align: center;
+}
+.product_show .show_toggle a{
+    color: #08c;
+    font: 300 16px/31px 'microsoft yahei';
+}
+.product_show .show_toggle a span{
+    color: #9397ff;
+    font: 200 22px/31px '';
+}
+.product_show .product_list{
+    width: 1024px;
+    margin: 0 auto;
+    padding-top: 40px;
+    display: none;
+}
+.product_show .product_list ul li{
+    float: left;
+    width: 256px;
+    height: 111px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 40px;
+}
+.product_show .product_list ul li a{
+    display: block;
+    width: 82px;
+    margin: 0 auto;
+    text-align: center;
+}
+.product_show .product_list ul li a:hover{
+    text-decoration: underline;
+    color: grey;
+}
+.product_show .product_list ul li a img{
+    display: block;
+    width: 80px;
+    padding: 0 5px 8px 5px;
+    margin-bottom: 10px;
+}
+.product_show .product_list ul li a span{
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+/*更新至 iOS 10*/
+.section_cont{
+    width: 817px;
+    height: 234px;
+    margin: 48px auto;
+}
+.section_cont .update_system{
+    width: 408px;
+    float: left;
+}
+.section_cont .update_system h2{
+    font: 400 39px/39px 'microsoft yahei';
+    color: #333;
+    margin-bottom: 18px;
+}
+.section_cont .update_system p{
+    font: 200 20px/42px 'microsoft yahei';
+    color: #333;
+    margin-bottom: 6px;
+}
+.update_system .link_section{
+    height: 31px;
+    margin-top: 24px;
+}
+.section_cont .update_system .link_section a{
+    font: 400 15px/31px 'microsoft yahei';
+    color: #08c;
+}
+.section_cont .img_section{
+    width: 400px;
+    float: right;
+
+}
+.section_cont .img_section img{
+    height: 234px;
+}
+/*热门主题*/
+.section_theme{
+    padding-top: 54px;
+    padding-bottom: 18px;
+    border-top: 1px solid #dedede;
+    text-align: center;
+}
+.section_theme h2{
+    font: 400 40px/40px 'microsoft yahei';
+    letter-spacing: 1px;
+}
+.layout_theme{
+    width: 980px;
+    margin: 0 auto;
+    letter-spacing: 1px;
+    padding-top: 12px;
+    padding-bottom: 48px;
+}
+.layout_theme .theme_left{
+    width: 447px;
+    float: left;
+}
+.layout_theme .theme_left img, .layout_theme .theme_right img{
+    display: block;
+    margin: 0 auto;
+    height: 150px;
+    padding-bottom: 18px;
+}
+.layout_theme .theme_left h3, .layout_theme .theme_right h3{
+    font: 400 22px/22px 'microsoft yahei';
+}
+.layout_theme .theme_left p, .layout_theme .theme_right p{
+    font: 400 14px/32px 'microsoft yahei';
+    margin-top: 23px;
+    margin-bottom: 25px;
+}
+.layout_theme .theme_left a, .layout_theme .theme_right a{
+    font: 400 14px/14px 'microsoft yahei';
+    color: #0088cc;
+}
+.layout_theme .theme_right{
+    width: 447px;
+    float: right;
+}
+/*确保 Apple 帐户安全的技巧*/
+.section_security{
+    border-top: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+}
+/*hr制作直线*/
+.section_security .hr{
+    width: 817px;
+    margin: 48px auto;
+}
+.section_security .section_mes{
+    float: left;
+    width: 408px;
+}
+.section_security .section_mes h2{
+    font: 200 47px/58px 'Microsoft yahei';
+    color: #333;
+    margin-bottom: 18px;
+}
+.section_security .section_mes p{
+    font: 300 23px/33px 'Microsoft yahei';
+    margin-bottom: 6px;
+}
+.section_security .section_mes .security_link{
+    height: 31px;
+    margin-top: 24px;
+}
+.section_security .section_mes .security_link a{
+    font: 200 17px/31px 'microsoft yahei';
+    color: #08c;
+}
+.section_security .security_img{
+    float: right;
+}
+.section_security .security_img img{
+    width: 400px;
+    height: 212px;
+}
+
+/*Apple 支持社区*/
+.heroImage{
+    width: 80px;
+    margin: 0 auto;
+    margin-top: 74px;
+}
+.heroImage img{
+    width: 80px;
+    height: 80px;
+}
+.section_discuss{
+    width: 817px;
+    margin: 0 auto;
+    margin-top: 16px;
+    text-align: center;
+}
+.section_discuss h2{
+    font-size: 47px;
+    line-height: 47px;
+    color: #333;
+}
+.section_discuss p{
+    font-size: 17px;
+    line-height: 26px;
+    margin-top: 18px;
+    color: #333;
+}
+.section_discuss .discuss_link{
+    height: 31px;
+    margin-top: 18px;
+}
+.section_discuss .discuss_link a{
+    font: 400 15px/31px 'microsoft yahei';
+    color: #08c;
+}
+/*画直线*/
+.draw_line{
+    width: 100%;
+    height: 1px;
+    background-color: #dedede;
+    margin-top: 48px;
+}
+
+/*保修和维修*/
+.section_maintain{
+    border-bottom: 1px solid #dedede;
+    padding-bottom: 48px;
+}
+/*用来居中*/
+.section_maintain .cent{
+    width: 817px;
+    margin: 0 auto;
+    margin-top: 48px;
+    padding-bottom: 18px;
+    text-align: center;
+}
+.section_maintain h2{
+    font: 400 50px/58px 'microsoft yahei';
+    color: #333333;
+}
+.section_maintain p{
+    font: 400 14px/26px "microsoft yahei";
+    color: #333;
+    margin-top: 18px;
+    letter-spacing: 2px;
+}
+.section_maintain .promo{
+    width: 979px;
+    margin: 0 auto;
+    margin-top: 32px;
+    padding: 0 81px;
+}
+.section_maintain .promo .promo_bg{
+    width: 817px;
+    height: 242px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+.section_maintain .promo_bg .promo_item{
+    float: left;
+    width: 408px;
+    padding-left: 60px;
+    padding-right: 60px;
+    border-right: 1px solid #dedede;
+}
+.section_maintain .promo_bg .promo_item img,.section_maintain .promo_bg .promo_checkmark img{
+    width: 40px;
+    height: 40px;
+}
+.section_maintain .promo_bg .promo_item p,.section_maintain .promo_bg .promo_checkmark p{
+    font: 600 15px/20px '';
+    color: #333333;
+    margin-top: 18px;
+}
+.section_maintain .promo_bg .promo_item p:hover,.section_maintain .promo_bg .promo_checkmark p:hover{
+    color: #31b0d5;
+    text-decoration: underline;
+}
+.section_maintain .promo_bg .promo_item span,.section_maintain .promo_bg .promo_checkmark span{
+    display: block;
+    font: 500 13px/28px '';
+    color: #333333;
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+.section_maintain .promo_bg .promo_checkmark{
+    float: right;
+    width: 408px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.section_maintain .promo_bg .promo_item .promo_link{
+    height: 28px;
+    margin-top: 10px;
+}
+.section_maintain .promo_bg .promo_item .promo_link span,.section_maintain .promo_bg .promo_checkmark .promo_link span{
+    font: 600 12px/17px '';
+    color: #2aabd2;
+}
+.section_maintain .promo_bg .promo_item .promo_link span:hover,.section_maintain .promo_bg .promo_checkmark .promo_link span:hover{
+    text-decoration: underline;
+}
+/*联系Apple支持*/
+.section_contact{
+    margin-top: 48px;
+    height: 40px;
+    text-align: center;
+}
+.section_contact h2{
+    font: 400 22px/40px 'Microsoft yahei';
+    color: #333333;
+    letter-spacing: 1px;
+}
+.section_help{
+    margin-top: 12px;
+    text-align: center;
+}
+.section_help h3{
+    font: 300 39px/58px 'Microsoft yahei';
+    color: #333333;
+    letter-spacing: 1px;
+}
+.section_help p{
+    font: 400 14px/26px 'Microsoft yahei';
+    color: #333333;
+    letter-spacing: 1px;
+    margin-top: 18px;
+}
+.help_link{
+    margin-top: 33px;
+    border-bottom: 1px solid #dedede;
+}
+.help_link a{
+    display: block;
+    width: 100px;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 5px;
+    font: 600 14px/34px '';
+    color: white;
+    letter-spacing: 1px;
+    background-color: #288dde;
+    margin-bottom: 48px;
+}
+/*免费参加店内的讲座*/
+.section_chair{
+    padding-top: 206px;
+    height: 518px;
+    background: url("../image/workshop-banner-image.image.large_2x.jpg") no-repeat center center;
+    background-size: cover;
+    letter-spacing: 1px;
+}
+.section_chair .chair_content{
+    width: 980px;
+    margin: 0 auto;
+}
+.section_chair .chair_content h2{
+    font: 400 39px/39px 'Microsoft yahei';
+}
+.section_chair .chair_content p{
+    font: 400 14px/26px 'Microsoft yahei';
+    margin-top: 36px;
+}
+.section_chair .chair_link{
+    width: 980px;
+    margin: 0 auto;
+    margin-top: 31px;
+}
+.section_chair .chair_link a{
+    font: 400 14px/26px 'Microsoft yahei';
+    color: #0088cc;
+}
+.realize_list{
+    text-align: center;
+    margin-top: 58px;
+    padding-bottom: 48px;
+    border-bottom: 1px solid #dedede;
+    letter-spacing: 1px;
+}
+.realize_list h2{
+    font: 400 23px/23px 'Microsoft yahei';
+    padding-bottom: 39px;
+}
+.realize_list a{
+    font: 400 13px/13px 'Microsoft yahei';
+    color: #0088cc;
+}
+/*更换和维修扩展计划*/
+.warranty_plan{
+    padding: 48px 0 85px 0;
+    text-align: center;
+}
+.warranty_plan h2{
+    font: 400 18px/40px 'Microsoft yahei';
+    color: #333333;
+    padding-bottom: 24px;
+    letter-spacing: 1px;
+}
+.warranty_plan ul{
+
+}
+.warranty_plan ul li{
+    height: 32px;
+}
+.warranty_plan ul li a{
+    font: 400 14px/32px 'Microsoft yahei';
+    color: #0088cc;
+}
+.warranty_plan ul li a:hover{
+    text-decoration: underline;
+}
+
+/*尾部设置开始*/
+.support_footer{
+    background-color: #f2f2f2;
+}
+.support_footer .center{
+    width: 1024px;
+    padding-top: 20px;
+    padding-left: 22px;
+    padding-right: 22px;
+    margin: 0 auto;
+    letter-spacing: 1px;
+    font-size: 12px;
+    font-family: 'microsoft yahei';
+
+}
+.support_footer .footer_title{
+    height: 24px;
+    margin-bottom: 20px;
+}
+.support_footer .footer_title a{
+    font: 200 16px/16px 'microsoft yahei';
+    color: #333;
+}
+.support_footer .footer_title span{
+    font: 200 9px/9px 'microsoft yahei';
+    color: #96968d;
+}
+.support_footer .footer_content{
+    padding-bottom: 31px;
+}
+.support_footer .footer_content .support_serve,.support_footer .footer_content .support_plan,.support_footer .footer_content .support_resource,.support_footer .footer_content .support_address{
+    width: 245px;
+    float: left;
+}
+.support_footer .footer_content .support_serve p,.support_plan p,.support_resource p,.support_address p{
+    line-height: 12px;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 9px;
+}
+.support_footer .footer_content .support_serve ul,.support_plan ul,.support_resource ul,.support_address ul{
+    margin-right: 20px;
+}
+.support_footer .footer_content .support_serve ul li,.support_plan ul li,.support_resource ul li,.support_address ul li{
+    margin-bottom: 9px;
+}
+.support_footer .support_more{
+    height: 26px;
+    padding-bottom: 5px;
+    margin-bottom: 6px;
+    border-bottom: 1px solid #dedede;
+}
+.support_footer .support_more p{
+
+}
+.support_footer .support_more p a{
+    color: #0088cc;
+}
+.support_footer .support_other{
+    font-size: 8px;
+    padding-bottom: 24px;
+    padding-right: 0;
+}
+.support_footer .support_other .support_copyright{
+    float: left;
+    margin-right: 19px;
+}
+.support_footer .support_other ul li{
+    float: left;
+}
+.support_footer .support_other ul li a{
+    padding-left: 11px;
+    padding-right: 11px;
+}
+.support_footer .support_other .support_china{
+    float: right;
+}
+.support_footer .support_other a{
+
+}
+.support_footer .support_other a img{
+    width: 16px;
+    margin-right: 6px;
+}
+.support_footer .support_other a span{
+    float: right;
+}
+/*尾部设置结束*/
+/*制作返回顶部*/
+.go_top{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    cursor: pointer;
+    display: none;
+    transition: all 5s ease 0s;
+}
+.arrows{
+    width: 0;
+    height: 0;
+    margin-top: 0;
+    border: 30px solid rgba(0,0,0,0);
+    border-top: none;
+    border-bottom-color: #08c;
+
+    transition: all 5s ease 0s;
+}
+.go_top:hover{
+    transform: rotate(360deg);
+}
+.go_top p{
+    font: 400 16px/16px 'microsoft yahei';
+    color: green;
+    margin-top: 5px;
+}
